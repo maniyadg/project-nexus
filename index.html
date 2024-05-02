@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Login and Signup Form </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+                <form action="#" onsubmit={validationLogForm()}>
+                    <div class="field input-field">
+                        <input type="email" id="email" placeholder="Email" class="input">
+                        <p id="email-error" class="error-message"></p>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" id="password" placeholder="Password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                        <span id="password-error" class="error-message"></span>
+                    </div>
+
+                    <div class="form-link">
+                        <a href="#" class="forgot-pass">Forgot password?</a>
+                    </div>
+
+                    <div class="field button-field">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Signup Form -->
+
+        <div class="form signup">
+            <div class="form-content">
+                <header>Signup</header>
+                <form action="#" onsubmit={validationRegForm()}>
+                    <div class="field input-field">
+                        <input type="email" id="email1" placeholder="Email" class="input">
+                        <p id="email-error1" class="error-message"></p>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" id="password1" placeholder="Create password" class="password">
+                        <p id="password-error1" class="error-message"></p>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" id="confirmPassword" placeholder="Confirm password" class="password">
+                        <i class='bx bx-hide eye-icon'></i>
+                        <p id="confirmPass-error1" class="error-message"></p>
+                    </div>
+
+                    <div class="field button-field">
+                        <button type="submit">Signup</button>
+                    </div>
+                </form>
+
+                <div class="form-link">
+                    <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
